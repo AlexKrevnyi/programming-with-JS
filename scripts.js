@@ -113,6 +113,7 @@ while (i <= 2022) {
 }
 console.log('Counting completed');
 
+
 //Nested loops
 
 for (var year = 2023; year < 2025; year++) {
@@ -121,6 +122,44 @@ for (var year = 2023; year < 2025; year++) {
 		console.log('.......', month);
 	}
 }
+
+//Exercise working with conditionals and loops
+//Task 1
+for (var i = 1; i < 11; i++) {
+	if (i == 1) {
+		console.log('Gold Medal');
+	}
+	else if (i == 2) {
+		console.log('Silver Medal');
+	}
+	else if (i == 3) {
+		console.log('Bronze Medal');
+	}
+	else {
+		console.log(i);
+	}
+}
+
+//Task 2
+
+for (var i = 1; i < 11; i++) {
+
+switch(i) {
+case 1:
+	console.log('Gold Medal');
+	break;
+case 2:
+	console.log('Silver Medal');
+	break;	
+case 3:
+	console.log('Bronze Medal');
+	break;
+default:
+console.log(i);	
+}
+
+}
+
 
 
 
