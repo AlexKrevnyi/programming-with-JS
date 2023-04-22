@@ -113,6 +113,15 @@ while (i <= 2022) {
 }
 console.log('Counting completed');
 
+//Nested loops
+
+for (var year = 2023; year < 2025; year++) {
+	console.log(year);
+	for (var month = 6; month < 9; month++) {
+		console.log('.......', month);
+	}
+}
+
 
 
 
