@@ -157,9 +157,46 @@ case 3:
 default:
 console.log(i);	
 }
-
 }
 
+   
+ var i = 3;
+  var j = 5;
+
+  if(i == 3 && j < 5) {
+    console.log("Hello");
+  } else {
+    console.log("Goodbye");
+  }
+
+  //Week 2. Functions
+
+var colors = ['red', 'green', 'blue', 'orange', 'black', 'yellow', 'pink'];
+
+function listArrayItems(arr) {
+	for (var i = 0;  i < arr.length; i++) {
+		if (arr[i] == 'red') {
+			console.l;
+		}
+		console.log(i, arr[i]);
+	}
+}
+
+listArrayItems(colors);
+
+//Week 2. Practice with functions
+
+function letterFinder(word, match) {
+	for (i = 0; i < word.length; i++) {
+		if (word[i] == match) {
+			console.log('Found the', match, 'at', i);
+		} else {
+			console.log('---No match found at', i);
+		}
+	}
+}
+
+letterFinder("test", "t");
 
 
 
