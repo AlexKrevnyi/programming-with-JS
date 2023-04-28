@@ -184,7 +184,7 @@ function listArrayItems(arr) {
 
 listArrayItems(colors);
 
-//Week 2. Practice with functions
+//-----------------------------Week 2. Practice with functions
 
 function letterFinder(word, match) {
 	for (i = 0; i < word.length; i++) {
@@ -198,6 +198,90 @@ function letterFinder(word, match) {
 
 letterFinder("test", "t");
 
+//---------------------------Week 2. Object Literals and the Dot Notation
+
+var assistantManager = {
+	rangeTilesPerTurn: 3,
+	socialSkills: 30,
+	streetSmarts: 30,
+	health: 40,
+	specialAbility: "young and ambitious",
+	greeting: "Let's make some money"
+}
+
+console.log(assistantManager.streetSmarts);
+console.log(assistantManager.greeting);
+
+//Object Literals and Braskets Notation
+var arr0fKeys = ['speed', 'altitude', 'color'];
+var drone = {
+	speed: 100,
+	altitude: 200,
+	color: 'red'
+}
+
+for (var i = 0; i < arr0fKeys.length; i++) {
+	console.log(drone[arr0fKeys[i]]);
+}
+
+//Arrays are objects
+var fruits = [];
+fruits.push("apple");
+fruits.push('pear');
+console.log(fruits);
+fruits.pop();
+console.log(fruits);
+fruits.pop();
+console.log(fruits);
 
 
+function arrayBuilder(one, two, three) {
+	var arr =[];
+	arr.push(one);
+	arr.push(two);
+	arr.push(three);
+	console.log(arr);
+}
 
+arrayBuilder('apple', 'pear', 'plum')
+
+function arrayBuilder(one, two, three) {
+	var arr =[];
+	arr.push(one);
+	arr.push(two);
+	arr.push(three);
+	return(arr);
+}
+
+var simpleArr = arrayBuilder('apple', 'pear', 'plum');
+console.log(simpleArr);
+
+//--------------------------Week 2. Math objects
+//Math.random
+Math.random();
+var decimal = Math.random();
+console.log(decimal);
+console.log(decimal * 10);
+
+//Math.ceil()
+var rounded = Math.ceil(1.0001);
+console.log(rounded);
+
+//Random integer
+var decimal = Math.random() * 10;
+var rounded = Math.ceil(decimal);
+
+console.log(rounded);
+
+//-----------------Week 2: A closer look at strings
+
+var letters = ['a', 'b', 'c'];
+for (var i = 0; i < letters.length; i++) {
+	console.log(letters[i]);
+}
+
+
+var letters = ['abc'];
+for (var i = 0; i < letters.length; i++) {
+	console.log(letters[i]);
+}
