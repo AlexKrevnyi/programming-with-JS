@@ -11,21 +11,26 @@
 	 }
 
 	 .container {
-	 	display: flex;
-	 	gap: 2rem;
+	 	text-align: center;
 	 }
 
 	 .boxes {
 	 	border: 2px solid black;
 	 	padding: 2rem;
 	 	text-align: center;
-	 	background-color: lightblue;
 	 }
 
 	 button {
 	 	height: 2rem;
-	 	width: 5rem;
 	 }
+
+	 .hidden-content {
+	 	display: none;
+	 }
+
+	.hidden-content.reveal-btn {
+		display: block;
+	}
 
 </style>
 </head>
@@ -36,20 +41,15 @@
 	
 	<div class="container">
 
-		<div class="boxes box-1">
-			<h1 id="heading">Example 1</h1>
-			<button onclick="alert('I love JavaScript')">Enter</button>
-		</div>
-		<div class="boxes box-2">
-			<h1 id="heading">Example 2</h1>
-			<button class="btn-2">Enter</button>
-		</div>
-		<div class="boxes box-3">
-			<h1 id="heading">Example 3</h1>
-			<button class="btn-3">Enter</button>
+		<button class="reveal-btn boxes">Reveal</button>
+		<div class="hidden-content boxes">
+			
+			Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris porttitor sapien ac pretium vulputate. Suspendisse ullamcorper dictum arcu at ornare. Maecenas at lectus id neque gravida feugiat eget id quam. Nulla sed arcu mi. Nulla rutrum leo id tempus interdum. Vestibulum dictum egestas imperdiet. Quisque hendrerit lectus nec metus molestie aliquet. Curabitur velit turpis, sagittis vitae ex ac, hendrerit laoreet nulla.
 		</div>
 
 	</div>
+
+
 
 
 	
