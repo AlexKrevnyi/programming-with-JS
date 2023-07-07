@@ -319,3 +319,21 @@ var user = 'Lisa';
 console.log(greet + user);
 console.log(greet.concat(user));
 
+
+//FreeCodeCamp
+
+const ul = document.queryselector('ul');
+const li = document.createElement('li');
+
+ul.append(li);
+
+
+
+
+
+
+
+
+
+
+
