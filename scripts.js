@@ -320,12 +320,23 @@ console.log(greet + user);
 console.log(greet.concat(user));
 
 
-//FreeCodeCamp
+//Week 2. typeof operator
 
-const ul = document.queryselector('ul');
-const li = document.createElement('li');
+//var test = typeof('what is this?');
+//var test = typeof(10);
+//var test = typeof(3.14);
+//var test = typeof(true);
+//var test = typeof(1 < 2);
+//var test = typeof([1,2,3,4,5]);
+var test = typeof({firstProperty: 1});
 
-ul.append(li);
+
+console.log(test);
+
+
+
+
+
 
 
 

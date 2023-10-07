@@ -117,7 +117,7 @@ function changeBgColor() {
 
 newBackgroundColor.addEventListener("mouseover", changeBgColor);
 
-*/
+
 
 // Reveal Event
 
@@ -134,6 +134,17 @@ function revealContent() {
 }
 
 revealBtn.addEventListener('click', revealContent);
+
+*/
+
+// Event Propagation
+
+window.addEventListener("click", function() {
+	console.log('Window');
+}, true)
+
+
+
 
 
 
